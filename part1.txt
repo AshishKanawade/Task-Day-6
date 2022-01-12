@@ -1,0 +1,209 @@
+// Problem 1
+
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        alert( "I'm JavaScript!");
+    </script>
+    Whats the error in this ?
+</body>
+</html>
+
+
+
+// Problem 2
+// File name in fix.html must be same to the name of the file i.e script.js
+
+
+// Problem 3
+// first alert with content "I'm JavaScript!" will be displayed.
+// then alert with content "Hello" will be displayed
+// then alert with content "Wor" and "ld" will be displayed in different lines as back ticks are used
+// then alert with comtent "6" will be displayed as it is (3 + 1 + 2)
+
+
+// Problem 4
+// Fixed alert
+// Use double quotes and space for "admin"
+let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname + " " + lname; 
+alert( admin ); // "Guvi geek"
+
+
+// Problem 5
+// Use double quotes and space for "name"
+// Use back ticks instead of single quotes for alert
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname + " " + lname;
+alert( `hello ${name}` );
+
+
+// Problem 6
+// Convert variables to parseInt
+let a = prompt("First number?");
+let b = prompt("Second number?");
+a = parseInt(a);
+b = parseInt(b);
+alert(a + b);
+
+
+// Problem 7
+// Convert strings to numbers
+// "2" > "12" => are strings so 'Code is Blasted'
+// Code says 2 > 12   but  2 < 12   =>  'Diffused'
+var a = parseInt("2") > parseInt("12");
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+
+// Problem 8
+// Convert variable to number
+// Enter "0" to get "Success"
+let a = prompt("Enter a number?");
+a = parseInt(a);
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+
+
+// Problem 9
+// Convert variable "value" to number 
+let value = prompt('How many runs you scored in this ball');
+value = parseInt(value);
+if (value === 4) {
+      console.log("You hit a Four");
+} else if (value === 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+
+
+// Problem 10
+// Added 'Welcome' message for employee
+let login = 'Employee';
+let message = (login == 'Employee') ? 'Welcome':
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
+
+
+// Problem 11
+// Remove 'let' inside curly brackets
+let message;
+if (null || 2 || undefined )
+{
+ message = "welcome boss";
+}
+else
+{
+ message = "Go away";
+}
+console.log(message);
+
+
+// Problem 12
+// Changing the values of Lock to '0'
+let message;
+let lock = 0;
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+
+
+// Problem 13
+// Changing the values of Lock to '0'
+let message;
+let lock = 0;
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+
+
+// Problem 14
+// Changing pre-decrement to post-decrement
+let i = 3;
+while (i) {
+  console.log( i-- );
+}
+
+
+// Problem 15
+for (let i = 0; i <= 10; i++) {
+    console.log(i)
+}
+
+
+// Problem 16
+// Incremented number by 2 instead of 1
+for (let num = 2; num <= 20; num += 2) {
+    console.log(num)
+}
+
+
+// Problem 17
+// Removed single quotes around gifts[i]
+// Used back ticks for console.log instead of single quotes
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(`Wrapped ${gifts[i]} and added a bow!`);
+}
+
+
+// Problem 18
+// Add break after if statement
+let countdown = 100;
+while (countdown > 0) {
+    countdown--;
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+  else {
+      console.log("bomb disarmed")
+  }
+  break;
+}
+
+
+// Problem 19
+// 'hi' will be printed
+// lemein is a string and lemeout is number
+// whereas msg to be printed is a string
+var lemein = "0";
+var lemeout = 0;
+var msg = "";
+if (lemein) {
+ msg += "hi";
+ }
+if (lemeout) {
+ msg += 'Hello';
+}
+console.log(msg);
